@@ -83,31 +83,31 @@ window.SITE_CONFIG = {
 		]
 	},
 
-overview: {
-  title: "Methodology",
-  steps: [
-    {
-      title: "Step 1: Track Design (OpenRail Bentley)",
-      text: "A real-world railway corridor is created using aerial imagery and elevation GIS data. This includes horizontal and vertical alignment, superelevation, turnouts, crossovers, yard layout, and bridge clearance.",
-      image: "assets/img/image2.jpg"
-    },
-    {
-      title: "Step 2: Train Scheduling and Signaling (SUMO Traffic Simulation)",
-      text: "A simulated rail network is built in SUMO with train routing, fixed-block signal design, and operating speed settings. Scheduling logic, including timetables and headways, is then applied.",
-      image: "assets/img/image3.jpg"
-    },
-    {
-      title: "Step 3: Immersive VR Visualization (LumenRT Bentley)",
-      text: "A 3D railway environment is developed with stations, surrounding buildings, trees, and rolling stock. This step concludes with a VR 360-degree video for immersive presentation.",
-      image: "assets/img/image4.jpg"
-    },
-    {
-      title: "Step 4: Results & Communication (Figures + Showcase Website)",
-      text: "Railway operations are evaluated using running time, dwell time, scheduled departures, and headway. Tables and plots are then used to communicate the findings through the project showcase website.",
-      image: "assets/img/image5.jpg"
-    }
-  ]
-},
+	overview: {
+		title: "Methodology",
+		steps: [
+			{
+				title: "Step 1: Track Design (OpenRail Bentley)",
+				text: "A real-world railway corridor is created using aerial imagery and elevation GIS data. This includes horizontal and vertical alignment, superelevation, turnouts, crossovers, yard layout, and bridge clearance.",
+				image: "assets/img/image2.jpg"
+			},
+			{
+				title: "Step 2: Train Scheduling and Signaling (SUMO Traffic Simulation)",
+				text: "A simulated rail network is built in SUMO with train routing, fixed-block signal design, and operating speed settings. Scheduling logic, including timetables and headways, is then applied.",
+				image: "assets/img/image3.jpg"
+			},
+			{
+				title: "Step 3: Immersive VR Visualization (LumenRT Bentley)",
+				text: "A 3D railway environment is developed with stations, surrounding buildings, trees, and rolling stock. This step concludes with a VR 360-degree video for immersive presentation.",
+				image: "assets/img/image4.jpg"
+			},
+			{
+				title: "Step 4: Results & Communication (Figures + Showcase Website)",
+				text: "Railway operations are evaluated using running time, dwell time, scheduled departures, and headway. Tables and plots are then used to communicate the findings through the project showcase website.",
+				image: "assets/img/image5.jpg"
+			}
+		]
+	},
 
   implementation: {
     title: "Methodology Steps (Demo Modules)",
@@ -151,40 +151,35 @@ overview: {
     ]
   },
 
-  results: {
-    title: "Results & Potential Improvements",
-    subtitle:
-      "We compare baseline conditions to tested scenarios using measurable KPIs. These results are simulation outputs for educational purposes only and are not city-validated or approved.",
+	results: {
+			title: "Results & Potential Improvements",
+			subtitle:
+				"Train schedule simulation outputs across two scenarios showing arrivals, departures, and dwell time across four stations. Results are for educational purposes only.",
 
-    kpis: [
-      { metric: "Average Delay",         baseline: "45",   improved: "36",   change: "-20%",     unit: "s/veh", note: "Overall" },
-      { metric: "Average Stopped Delay", baseline: "28",   improved: "22",   change: "-21%",     unit: "s/veh", note: "Overall" },
-      { metric: "Throughput",           baseline: "1800", improved: "1950", change: "+8%",      unit: "veh/h", note: "Total served" },
-      { metric: "Emission",             baseline: "100",  improved: "87",   change: "-13%",     unit: "kg",    note: "CO₂ (example)" },
-      { metric: "LOS",                  baseline: "D",    improved: "C",    change: "Improved", unit: "-",     note: "Intersection LOS" }
-    ],
+			kpis: [],
 
-    charts: {
-      left: {
-        title:"Scenario 1 (Train Schedule: Arrivals, Departure, Dwell Time)",
-        src: "assets/img/image6.jpg",
-        alt: "Scenario 1 (Train Schedule: Arrivals, Departure, Dwell Time) chart"
-      },
-      right: {
-        title: "Scenario 2 (Train Schedule: Arrivals, Departure, Dwell Time)",
-        src: "assets/img/image7.jpg",
-        alt: "Scenario 2 (Train Schedule: Arrivals, Departure, Dwell Time)"
-      }
-    },
+			charts: {
+				left: {
+					title: "Scenario 1 — Train Schedule: Arrivals, Departures & Dwell Time",
+					src: "assets/img/image6.jpg",
+					alt: "Scenario 1 train schedule chart showing arrivals and departures across S1 to S4"
+				},
+				right: {
+					title: "Scenario 2 — Train Schedule: Arrivals, Departures & Dwell Time",
+					src: "assets/img/image7.jpg",
+					alt: "Scenario 2 train schedule chart showing arrivals and departures across S1 to S4"
+				}
+			},
 
-    discussionTitle: "Discussion (Safe Language)",
-    discussionBullets: [
-      "In our simulation, timing changes reduced delay and queues under the observed demand conditions.",
-      "Tradeoffs may exist (e.g., one approach improves while another worsens); we report both.",
-      "Additional testing across multiple days/time periods would improve confidence and generalizability.",
-      "Any real-world implementation would require agency review, constraints, and field validation."
-    ]
-  },
+			discussionTitle: "Discussion",
+			discussionBullets: [
+				"Both scenarios simulate train arrivals and departures across four stations (S1–S4) under five frequency levels (f_0.0 to f_0.4), showing how increased frequency compresses the schedule.",
+				"Scenario 2 produces significantly lower travel times across all frequency levels — dwell time at S2 drops from ~1,389s to ~191s, indicating a more efficient scheduling configuration.",
+				"Higher frequency trains (f_0.3, f_0.4) consistently show earlier arrivals and tighter headways, demonstrating the operational benefit of increased service frequency.",
+				"Tradeoffs exist between frequency and dwell time — higher frequency reduces station dwell but increases scheduling complexity and potential conflicts.",
+				"Real-world implementation would require validation against field conditions, agency constraints, and safety review."
+			]
+		},
 
   team: {
     title: "Team & Acknowledgments",
