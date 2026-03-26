@@ -107,7 +107,7 @@ overview: {
       image: "assets/img/image5.jpg"
     }
   ]
-}
+},
 
   implementation: {
     title: "Methodology Steps (Demo Modules)",
