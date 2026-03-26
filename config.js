@@ -88,22 +88,22 @@ window.SITE_CONFIG = {
 		steps: [
 			{
 				title: "Step 1: Track Design (OpenRail Bentley)",
-				text: "A real-world railway corridor is created using aerial imagery and elevation GIS data. This includes horizontal and vertical alignment, superelevation, turnouts, crossovers, yard layout, and bridge clearance.",
+				text: "Design the railway corridor using GIS-based alignment and layout tools.",
 				image: "assets/img/image2.jpg"
 			},
 			{
-				title: "Step 2: Train Scheduling and Signaling (SUMO Traffic Simulation)",
-				text: "A simulated rail network is built in SUMO with train routing, fixed-block signal design, and operating speed settings. Scheduling logic, including timetables and headways, is then applied.",
+				title: "Step 2: Train Scheduling and Signaling (SUMO Simulation)",
+				text: "Build the rail network and test routing, signaling, and timetables.",
 				image: "assets/img/image3.jpg"
 			},
 			{
 				title: "Step 3: Immersive VR Visualization (LumenRT Bentley)",
-				text: "A 3D railway environment is developed with stations, surrounding buildings, trees, and rolling stock. This step concludes with a VR 360-degree video for immersive presentation.",
+				text: "Create a 3D railway scene and produce a VR 360-degree video.",
 				image: "assets/img/image4.jpg"
 			},
 			{
 				title: "Step 4: Results & Communication (Figures + Showcase Website)",
-				text: "Railway operations are evaluated using running time, dwell time, scheduled departures, and headway. Tables and plots are then used to communicate the findings through the project showcase website.",
+				text: "Summarize results using figures, KPIs, and the showcase website.",
 				image: "assets/img/image5.jpg"
 			}
 		]
