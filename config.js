@@ -156,12 +156,6 @@ window.SITE_CONFIG = {
 			subtitle:
 				"Train schedule simulation outputs across two scenarios showing arrivals, departures, and dwell time across four stations. Results are for educational purposes only.",
 
-			// Hide table if no KPIs
-			const kpiCard = tbody?.closest('.card');
-			if (kpiCard) {
-				kpiCard.style.display = (C.results.kpis || []).length === 0 ? 'none' : '';
-			}
-
 			charts: {
 				left: {
 					title: "Scenario 1 — Train Schedule: Arrivals, Departures & Dwell Time",
