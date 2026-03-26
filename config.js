@@ -10,7 +10,7 @@ window.SITE_CONFIG = {
     courseTag: "RWR 4013",
 
     // updated tagline text (big pill)
-    tagline: "Course Project: Digital Twins for Smart Cities",
+    tagline: "Workshop Project: Railway Engineering",
 
     studentName: "Yohan Mohammadi",
     program: "Program / Department",
