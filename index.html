@@ -205,10 +205,6 @@
       }
       @media (min-width: 992px){ .tutorial-large-img{ max-width: 640px; } }
 
-      /* KPI table */
-      .kpi-table th{ font-weight: 800; }
-      .kpi-note{ color: #6c757d; font-size: 0.9rem; }
-
       /* Footer */
       footer{
         border-top: 1px solid var(--footer-border);
@@ -288,7 +284,7 @@
         <div class="container">
           <div class="text-muted small text-uppercase mb-4" id="projectTitleLabel">Project Title</div>
           <h1 class="section-title h2 mb-3" id="projectTitleText">
-            IEEE Toronto Section Railway Engineering: Design, Simulation & Immersive VR Visualization
+            Digital Twin of an Urban Intersection Using Video-Based Demand Estimation and SUMO Scenario Testing
           </h1>
 
           <div class="intro-video-wrap">
@@ -308,7 +304,7 @@
           </div>
 
           <p class="mt-3 mb-0 text-muted small" id="introCaption">
-            Autoplay preview (≈20 seconds): OpenRail track design → SUMO scheduling and signaling → LumenRT VR visualization → results, figures, and showcase website.
+            Autoplay preview (≈20 seconds): raw video → detections/tracks → SUMO baseline → signal timing scenarios → KPI comparison dashboard.
           </p>
         </div>
       </section>
@@ -379,26 +375,6 @@
         <div class="container">
           <h2 class="section-title h3 text-center mb-2" id="resultsTitle">Results</h2>
           <p class="text-center text-muted mb-4 section-subtitle" id="resultsSubtitle"></p>
-
-          <div class="card card-soft">
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-striped mb-0 kpi-table">
-                  <thead>
-                    <tr>
-                      <th>Metric</th>
-                      <th>Baseline</th>
-                      <th>Tested Scenario</th>
-                      <th>Improvement/Degradation</th>
-                      <th>Unit</th>
-                      <th class="text-muted">Note</th>
-                    </tr>
-                  </thead>
-                  <tbody id="kpiTbody"></tbody>
-                </table>
-              </div>
-            </div>
-          </div>
 
           <!-- CHARTS -->
           <div class="row g-4 mt-4">
@@ -688,20 +664,6 @@
         setText("resultsTitle", C.results.title || "Results");
         setText("resultsSubtitle", C.results.subtitle || "");
         setText("discussionTitle", C.results.discussionTitle || "Discussion");
-
-        const tbody = el("kpiTbody");
-        if (tbody) {
-          tbody.innerHTML = (C.results.kpis || []).map(k => `
-            <tr>
-              <td><strong>${k.metric || ""}</strong></td>
-              <td>${k.baseline || ""}</td>
-              <td>${k.improved || ""}</td>
-              <td>${k.change || ""}</td>
-              <td>${k.unit || ""}</td>
-              <td class="text-muted">${k.note || ""}</td>
-            </tr>
-          `).join("");
-        }
 
         if (C.results.charts) {
           const L = C.results.charts.left || {};
