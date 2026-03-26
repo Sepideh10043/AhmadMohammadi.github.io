@@ -7,12 +7,12 @@ window.SITE_CONFIG = {
     profileImage: "assets/img/image1.jpg",
 
     // NEW: course code tag shown above the course project pill
-    courseTag: "RWR 4013",
+    courseTag: "RWR 4016",
 
     // updated tagline text (big pill)
     tagline: "Workshop Project: Railway Engineering",
 
-    studentName: "Yohan Mohammadi",
+    studentName: "Ahmad Mohammadi",
     program: "Program / Department",
     university: "RoadwayVR University, Canada",
     email: "your.email@example.com"
@@ -66,42 +66,43 @@ window.SITE_CONFIG = {
     ],
 
     problemTitle: "Problem Statement",
-    problemBullets: [
-      "Observed congestion and queue spillback during peak periods (video evidence).",
-      "Stop-and-go conditions and turning interactions may increase perceived conflict risk.",
-      "Need to compare low-cost operational strategies before considering major geometric changes."
-    ],
+	problemBullets: [
+	  "Students lack hands-on experience designing real-world railway corridors using professional track geometry and layout tools.",
+	  "There is limited exposure to immersive 3D visualization and VR 360-degree video production in railway engineering education.",
+	  "Operational concepts such as scheduling, fixed-block signaling, and capacity analysis are rarely practiced using industry-standard simulation tools.",
+	  "Engineering students rarely practice communicating technical results through visual outputs and professional digital portfolios."
+	],
 
     objectivesTitle: "Project Objectives",
-    objectivesBullets: [
-      "Extract traffic volumes, turning movements, and trajectories from video using computer vision.",
-      "Build a baseline SUMO model that matches observed demand and approximate field conditions.",
-      "Test signal timing strategies as controlled what-if scenarios (cycle, splits, offsets, phasing).",
-      "Summarize scenario performance using measurable KPIs and communicate findings clearly."
-    ]
+	objectivesBullets: [
+	  "Design a real-world railway corridor using Bentley OpenRail ConceptStation including track geometry and layout elements.",
+	  "Develop immersive 3D railway environments and VR 360-degree video outputs using LumenRT.",
+	  "Build a simulated rail network in SUMO with scheduling, fixed-block signaling, and capacity analysis.",
+	  "Communicate project outcomes through engineering figures, KPI outputs, and a professional showcase website as a portfolio deliverable."
+	],
   },
 
   overview: {
     title: "Methodology",
     steps: [
       {
-        title: "Step 1: Data Layer (Computer Vision)",
-        text: "We detect and track road users from the video to estimate turning volumes, trajectories, speeds, and time headways. These outputs become inputs to the simulation model.",
+        title: "Step 1: Track Design (OpenRail Bentley)",
+        text: "A real-world railway corridor is created using aerial imagery and elevation GIS maps. This includes horizontal and vertical alignment, superelevation, turnouts, crossovers, yard layout, and bridge clearance.",
         image: "assets/img/image2.jpg"
       },
       {
-        title: "Step 2: Model Layer (Traffic Simulation)",
-        text: "We build a SUMO network for the intersection/corridor and calibrate demand and behavior so baseline queues and travel times are reasonable compared to what is observed.",
+        title: "Step 2: Train Scheduling and Signaling (SUMO Traffic Simulation)",
+        text: "A simulated rail network is built in SUMO with train routing, fixed-block signal design, and maximum operating speed configuration. Scheduling logic including timetables and headways is applied.",
         image: "assets/img/image3.jpg"
       },
       {
-        title: "Step 3: Connection Layer (Signal Optimization)",
-        text: "We test alternative timing plans (cycle length, green splits, offsets, phases). Each scenario is evaluated using consistent KPIs to enable a fair comparison.",
+        title: "Step 3: Immersive VR Visualization (LumenRT Bentley)",
+        text: "A 3D railway environment is developed including train stations, surrounding buildings, trees, and rolling stock. The phase concludes with a VR 360-degree video output for immersive presentation.",
         image: "assets/img/image4.jpg"
       },
       {
-        title: "Step 4: Service Layer (Decision & Visualization)",
-        text: "We communicate outcomes with KPI dashboards, plots, and short animations to help a non-technical audience understand tradeoffs between scenarios.",
+        title: "Step 4: Engineering Results (Charts and Figures)",
+        text: "Railway operations are evaluated by analyzing running time, dwell time, scheduled departures, and headway. KPI tables and plots are generated to communicate findings through the project showcase website.",
         image: "assets/img/image5.jpg"
       }
     ]
