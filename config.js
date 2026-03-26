@@ -1,6 +1,6 @@
 // config.js (Students edit only this file)
 window.SITE_CONFIG = {
-  pageTitle: "Academic Digital Twin Case Study | Student Showcase",
+  pageTitle: "Academic Railway Engineering Case Study | Student Showcase",
   homeUrl: "https://roadwayvr.com",
 
   hero: {
@@ -171,11 +171,11 @@ window.SITE_CONFIG = {
 
 			discussionTitle: "Discussion",
 			discussionBullets: [
-				"Both scenarios simulate train arrivals and departures across four stations (S1–S4) under five frequency levels (f_0.0 to f_0.4), showing how increased frequency compresses the schedule.",
-				"Scenario 2 produces significantly lower travel times across all frequency levels — dwell time at S2 drops from ~1,389s to ~191s, indicating a more efficient scheduling configuration.",
-				"Higher frequency trains (f_0.3, f_0.4) consistently show earlier arrivals and tighter headways, demonstrating the operational benefit of increased service frequency.",
-				"Tradeoffs exist between frequency and dwell time — higher frequency reduces station dwell but increases scheduling complexity and potential conflicts.",
-				"Real-world implementation would require validation against field conditions, agency constraints, and safety review."
+				"Scenario 1 provides a stable baseline timetable with consistent station dwell and smooth train progression.",
+				"Scenario 2 applies a delay at S2, which then propagates to downstream stations.",
+				"Delay effects grow across frequency levels, with major increases in arrival and departure times at S3 and S4.",
+				"S1 is only slightly affected, while downstream stations absorb most of the disruption.",
+				"This demonstrates the importance of recovery time, dwell management, and operational control in rail scheduling."
 			]
 		},
 
@@ -185,14 +185,14 @@ window.SITE_CONFIG = {
       "This section clarifies academic context, roles, tools, and sources. Clear attribution improves credibility and shows ethical data handling.",
 
     members: [
-      { name: "Your Name", role: "Computer Vision + Simulation + KPI Analysis + Reporting" }
+      { name: "Your Name", role: "Track Design + Rail Scheduling & Signaling + Immersive VR Visualization + Results & Communication" }
     ],
 
     acknowledgments: [
-      "Course: Digital Twins for Smart Cities",
+      "Workshop: Railway Engineering",
       "Institution: RoadwayVR University",
       "Instructor: Ahmad Mohammadi",
-      "Tools: SUMO, Python, CV models, and visualization tools"
+      "Tools: OpenRail, SUMO, LumenRT"
     ],
 
     repoLabel: "Project Repository",
