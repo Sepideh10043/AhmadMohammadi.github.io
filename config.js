@@ -47,104 +47,104 @@ window.SITE_CONFIG = {
 
   intro: {
     projectTitleLabel: "Project Title",
-    projectTitle: "Digital Twin of an Urban Intersection Using Video-Based Demand Estimation and SUMO Scenario Testing",
+    projectTitle: "IEEE Toronto Section Railway Engineering: Design, Simulation & Immersive VR Visualization ",
     heroVideo: "assets/video/video.mp4",
     heroVideoPoster: "",
     heroVideoAlt: "Autoplay preview video (academic project)",
-    videoCaption:
-      "Autoplay preview (≈20 seconds): raw video → detections/tracks → SUMO baseline → signal timing scenarios → KPI comparison dashboard."
+	videoCaption:
+	  "Autoplay preview (≈20 seconds): OpenRail track design → SUMO scheduling and signaling → LumenRT VR visualization → results, figures, and showcase website."
   },
 
-  caseStudy: {
-    title: "Introduction",
+	caseStudy: {
+		title: "Introduction",
 
-    backgroundTitle: "Background",
-	backgroundBullets: [
-	  "Railway engineering requires integrated skills across track design, visualization, and operations.",
-	  "Most educational programs cover these topics separately with limited hands-on software experience.",
-	  "Industry tools like OpenRail, LumenRT, and SUMO are rarely introduced in a single workshop setting.",
-	  "A project-based workflow mirrors real industry practice at firms like WSP, AECOM, and Metrolinx."
-	],
+		backgroundTitle: "Background",
+		backgroundBullets: [
+			"Global freight rail is growing and remains strategically important.",
+			"Rail carries about 18% of EU inland freight, 36% in the U.S., and 27% in India.",
+			"Road dominates many freight systems, so rail often receives less attention.",
+			"In Canada, rail accounted for 10.5% of international merchandise trade value in 2024."
+		],
 
-    problemTitle: "Problem Statement",
-	problemBullets: [
-	  "Students lack hands-on experience designing railway corridors with professional track design tools.",
-	  "3D visualization and VR video production are rarely covered in railway engineering education.",
-	  "Scheduling, signaling, and capacity analysis are seldom practiced using simulation software.",
-	  "Students have few opportunities to communicate technical results through a professional digital portfolio."
-	],
+		problemTitle: "Problem Statement",
+		problemBullets: [
+			"Limited hands-on practice with railway design tools.",
+			"Little experience with rail simulation for scheduling and signaling.",
+			"Minimal exposure to 3D visualization and VR workflows.",
+			"Few opportunities to present work in a professional digital format."
+		],
 
-    objectivesTitle: "Project Objectives",
-	objectivesBullets: [
-	  "Design a railway corridor in OpenRail ConceptStation covering track geometry and layout.",
-	  "Build a 3D railway environment and produce a VR 360-degree video using LumenRT.",
-	  "Simulate rail operations in SUMO including scheduling, signaling, and capacity analysis.",
-	  "Present results through engineering figures, KPI outputs, and a professional showcase website."
-	],
-  },
+		objectivesTitle: "Project Objectives",
+		objectivesBullets: [
+			"Design a railway corridor in OpenRail ConceptStation.",
+			"Simulate train scheduling, signaling, and capacity in SUMO.",
+			"Create a 3D rail environment and VR video in LumenRT.",
+			"Present results through KPIs, figures, and a showcase website."
+		]
+	},
 
-  overview: {
-    title: "Methodology",
-    steps: [
-      {
-        title: "Step 1: Track Design (OpenRail Bentley)",
-        text: "A real-world railway corridor is created using aerial imagery and elevation GIS maps. This includes horizontal and vertical alignment, superelevation, turnouts, crossovers, yard layout, and bridge clearance.",
-        image: "assets/img/image2.jpg"
-      },
-      {
-        title: "Step 2: Train Scheduling and Signaling (SUMO Traffic Simulation)",
-        text: "A simulated rail network is built in SUMO with train routing, fixed-block signal design, and maximum operating speed configuration. Scheduling logic including timetables and headways is applied.",
-        image: "assets/img/image3.jpg"
-      },
-      {
-        title: "Step 3: Immersive VR Visualization (LumenRT Bentley)",
-        text: "A 3D railway environment is developed including train stations, surrounding buildings, trees, and rolling stock. The phase concludes with a VR 360-degree video output for immersive presentation.",
-        image: "assets/img/image4.jpg"
-      },
-      {
-        title: "Step 4: Engineering Results (Charts and Figures)",
-        text: "Railway operations are evaluated by analyzing running time, dwell time, scheduled departures, and headway. KPI tables and plots are generated to communicate findings through the project showcase website.",
-        image: "assets/img/image5.jpg"
-      }
-    ]
-  },
+overview: {
+  title: "Methodology",
+  steps: [
+    {
+      title: "Step 1: Track Design (OpenRail Bentley)",
+      text: "A real-world railway corridor is created using aerial imagery and elevation GIS data. This includes horizontal and vertical alignment, superelevation, turnouts, crossovers, yard layout, and bridge clearance.",
+      image: "assets/img/image2.jpg"
+    },
+    {
+      title: "Step 2: Train Scheduling and Signaling (SUMO Traffic Simulation)",
+      text: "A simulated rail network is built in SUMO with train routing, fixed-block signal design, and operating speed settings. Scheduling logic, including timetables and headways, is then applied.",
+      image: "assets/img/image3.jpg"
+    },
+    {
+      title: "Step 3: Immersive VR Visualization (LumenRT Bentley)",
+      text: "A 3D railway environment is developed with stations, surrounding buildings, trees, and rolling stock. This step concludes with a VR 360-degree video for immersive presentation.",
+      image: "assets/img/image4.jpg"
+    },
+    {
+      title: "Step 4: Results & Communication (Figures + Showcase Website)",
+      text: "Railway operations are evaluated using running time, dwell time, scheduled departures, and headway. Tables and plots are then used to communicate the findings through the project showcase website.",
+      image: "assets/img/image5.jpg"
+    }
+  ]
+}
 
   implementation: {
     title: "Methodology Steps (Demo Modules)",
     modules: [
       {
-        title: "Module 1: Sensing",
+        title: "Module 1: Track Design (Bentley OpenRail)",
         bullets: [
-          { text: "Detector + tracker used (e.g., YOLOv8 + ByteTrack) and why chosen." },
-          { text: "Extraction of turning volumes and movement counts from tracked trajectories." },
-          { text: "Quality checks: occlusion notes, sample frames, and error sources." }
+          { text: "Create a real-world railway corridor using aerial imagery and elevation terrain inputs." },
+          { text: "Design horizontal and vertical alignment, superelevation, turnouts, crossovers, and bridge clearance." },
+          { text: "Build a complete yard layout following industry standards (Transport Canada, AREMA)." }
         ],
         image: "assets/img/image2.jpg"
       },
       {
-        title: "Module 2: Simulating",
+        title: "Module 2: Train Scheduling & Signaling (SUMO)",
         bullets: [
-          { text: "Network build: lanes/connectors, routes, demand inputs from Module 1." },
-          { text: "Calibration evidence (travel time, queue length, or GEH comparison where possible)." },
-          { text: "Baseline KPIs: delay, queues, stops, throughput (brief summary)." }
+          { text: "Build a simulated rail network in SUMO with train routing and maximum operating speed." },
+          { text: "Design fixed-block rail signals and define station stops along the corridor." },
+          { text: "Configure timetable, scheduled departures, running time, dwell time, and headway." }
         ],
         image: "assets/img/image3.jpg"
       },
       {
-        title: "Module 3: Signal Strategy Testing",
+        title: "Module 3: Immersive VR Visualization (LumenRT)",
         bullets: [
-          { text: "Decision variables changed: cycle length, splits, offsets, and/or phase structure." },
-          { text: "Scenario design: baseline + 2–3 what-if timing strategies under the same demand." },
-          { text: "Comparison: before vs after KPI table and one clear plot." }
+          { text: "Develop a 3D railway environment including stations, buildings, trees, and rolling stock." },
+          { text: "Configure visualization fundamentals: lighting, camera position, time of day, and scene composition." },
+          { text: "Produce a VR 360-degree video output for immersive presentation and portfolio use." }
         ],
         image: "assets/img/image4.jpg"
       },
       {
-        title: "Module 4: Visualization",
+        title: "Module 4: Results & Communication",
         bullets: [
-          { text: "Dashboard or plot set: KPI cards, bar charts, and/or time series." },
-          { text: "Scenario story: what changed, what improved, and what tradeoffs appeared." },
-          { text: "Limitations + next steps: what data would strengthen confidence." }
+          { text: "Generate engineering figures including KPI tables, capacity plots, and simulation screenshots." },
+          { text: "Compile outputs from all three phases into a structured project narrative." },
+          { text: "Publish a professional showcase website as a portfolio deliverable for IEEE certificate submission." }
         ],
         image: "assets/img/image5.jpg"
       }
@@ -152,7 +152,7 @@ window.SITE_CONFIG = {
   },
 
   results: {
-    title: "Results & Potential Improvements (Simulation-Based)",
+    title: "Results & Potential Improvements",
     subtitle:
       "We compare baseline conditions to tested scenarios using measurable KPIs. These results are simulation outputs for educational purposes only and are not city-validated or approved.",
 
@@ -166,14 +166,14 @@ window.SITE_CONFIG = {
 
     charts: {
       left: {
-        title: "Average Delay per Approach",
+        title:"Scenario 1 (Train Schedule: Arrivals, Departure, Dwell Time)",
         src: "assets/img/image6.jpg",
-        alt: "Average delay per approach chart"
+        alt: "Scenario 1 (Train Schedule: Arrivals, Departure, Dwell Time) chart"
       },
       right: {
-        title: "Average Delay (Overall)",
+        title: "Scenario 2 (Train Schedule: Arrivals, Departure, Dwell Time)",
         src: "assets/img/image7.jpg",
-        alt: "Overall average delay chart"
+        alt: "Scenario 2 (Train Schedule: Arrivals, Departure, Dwell Time)"
       }
     },
 
