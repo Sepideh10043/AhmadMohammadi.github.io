@@ -59,26 +59,27 @@ window.SITE_CONFIG = {
     title: "Introduction",
 
     backgroundTitle: "Background",
-    backgroundBullets: [
-      "Single-intersection case study for practicing data-driven operational evaluation.",
-      "Compare baseline conditions to potential improvements using simulation under stated assumptions.",
-      "Focus on transparent methods and measurable KPIs (educational what-if outcomes)."
-    ],
+	backgroundBullets: [
+	  "Railway engineering requires integrated skills across track design, visualization, and operations.",
+	  "Most educational programs cover these topics separately with limited hands-on software experience.",
+	  "Industry tools like OpenRail, LumenRT, and SUMO are rarely introduced in a single workshop setting.",
+	  "A project-based workflow mirrors real industry practice at firms like WSP, AECOM, and Metrolinx."
+	],
 
     problemTitle: "Problem Statement",
 	problemBullets: [
-	  "Students lack hands-on experience designing real-world railway corridors using professional track geometry and layout tools.",
-	  "There is limited exposure to immersive 3D visualization and VR 360-degree video production in railway engineering education.",
-	  "Operational concepts such as scheduling, fixed-block signaling, and capacity analysis are rarely practiced using industry-standard simulation tools.",
-	  "Engineering students rarely practice communicating technical results through visual outputs and professional digital portfolios."
+	  "Students lack hands-on experience designing railway corridors with professional track design tools.",
+	  "3D visualization and VR video production are rarely covered in railway engineering education.",
+	  "Scheduling, signaling, and capacity analysis are seldom practiced using simulation software.",
+	  "Students have few opportunities to communicate technical results through a professional digital portfolio."
 	],
 
     objectivesTitle: "Project Objectives",
 	objectivesBullets: [
-	  "Design a real-world railway corridor using Bentley OpenRail ConceptStation including track geometry and layout elements.",
-	  "Develop immersive 3D railway environments and VR 360-degree video outputs using LumenRT.",
-	  "Build a simulated rail network in SUMO with scheduling, fixed-block signaling, and capacity analysis.",
-	  "Communicate project outcomes through engineering figures, KPI outputs, and a professional showcase website as a portfolio deliverable."
+	  "Design a railway corridor in OpenRail ConceptStation covering track geometry and layout.",
+	  "Build a 3D railway environment and produce a VR 360-degree video using LumenRT.",
+	  "Simulate rail operations in SUMO including scheduling, signaling, and capacity analysis.",
+	  "Present results through engineering figures, KPI outputs, and a professional showcase website."
 	],
   },
 
