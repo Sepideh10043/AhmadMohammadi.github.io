@@ -69,16 +69,16 @@ window.SITE_CONFIG = {
 		problemTitle: "Problem Statement",
 		problemBullets: [
 			"Limited hands-on practice with railway design tools.",
-			"Little experience with rail simulation for scheduling and signaling.",
 			"Minimal exposure to 3D visualization and VR workflows.",
+			"Little experience with rail simulation for scheduling and signaling.",
 			"Few opportunities to present work in a professional digital format."
 		],
 
 		objectivesTitle: "Project Objectives",
 		objectivesBullets: [
 			"Design a railway corridor in OpenRail ConceptStation.",
-			"Simulate train scheduling, signaling, and capacity in SUMO.",
 			"Create a 3D rail environment and VR video in LumenRT.",
+			"Simulate train scheduling, signaling, and capacity in SUMO.",
 			"Present results through KPIs, figures, and a showcase website."
 		]
 	},
@@ -92,13 +92,13 @@ window.SITE_CONFIG = {
 				image: "assets/img/image2.jpg"
 			},
 			{
-				title: "Step 2: Train Scheduling and Signaling (SUMO Simulation)",
-				text: "Build the rail network and test routing, signaling, and timetables.",
+				title: "Step 2: Immersive VR Visualization (LumenRT Bentley)",
+				text: "Create a 3D railway scene and produce a VR 360-degree video.",
 				image: "assets/img/image3.jpg"
 			},
 			{
-				title: "Step 3: Immersive VR Visualization (LumenRT Bentley)",
-				text: "Create a 3D railway scene and produce a VR 360-degree video.",
+				title: "Step 3: Train Scheduling and Signaling (SUMO Simulation)",
+				text: "Build the rail network and test routing, signaling, and timetables.",
 				image: "assets/img/image4.jpg"
 			},
 			{
@@ -122,20 +122,20 @@ window.SITE_CONFIG = {
         image: "assets/img/image2.jpg"
       },
       {
-        title: "Module 2: Train Scheduling & Signaling (SUMO)",
+        title: "Module 2: Immersive VR Visualization (LumenRT)",
         bullets: [
-          { text: "Build a simulated rail network in SUMO with train routing and maximum operating speed." },
-          { text: "Design fixed-block rail signals and define station stops along the corridor." },
-          { text: "Configure timetable, scheduled departures, running time, dwell time, and headway." }
+				  { text: "Develop a 3D railway environment including stations, buildings, trees, and rolling stock." },
+          { text: "Configure visualization fundamentals: lighting, camera position, time of day, and scene composition." },
+          { text: "Produce a VR 360-degree video output for immersive presentation and portfolio use." }
         ],
         image: "assets/img/image3.jpg"
       },
       {
-        title: "Module 3: Immersive VR Visualization (LumenRT)",
+        title: "Module 3: Train Scheduling & Signaling (SUMO)",
         bullets: [
-          { text: "Develop a 3D railway environment including stations, buildings, trees, and rolling stock." },
-          { text: "Configure visualization fundamentals: lighting, camera position, time of day, and scene composition." },
-          { text: "Produce a VR 360-degree video output for immersive presentation and portfolio use." }
+				  { text: "Build a simulated rail network in SUMO with train routing and maximum operating speed." },
+          { text: "Design fixed-block rail signals and define station stops along the corridor." },
+          { text: "Configure timetable, scheduled departures, running time, dwell time, and headway." }
         ],
         image: "assets/img/image4.jpg"
       },
